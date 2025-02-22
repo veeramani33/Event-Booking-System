@@ -38,14 +38,49 @@ git clone https://github.com/veeramani33/Event-Booking-System.git
 cd Event-Booking-System
 
 ### 2. Install Dependencies
-npm install
+    npm install
 
 ### 3. Environment Variables
-Create a .env file in the root directory and add the following:
-REACT_APP_TOTAL_SLOTS=10
-REACT_APP_API_URL=http://localhost:5000
+    Create a .env file in the root directory and add the following:
+    REACT_APP_TOTAL_SLOTS=10
+    REACT_APP_API_URL=http://localhost:5000
 
 ### 4. Start the Development Server
-npm start
-The app will be accessible at http://localhost:3000.
+    npm start
+    The app will be accessible at http://localhost:3000.
 
+🎨 State Management Approach
+    Custom Hooks: Efficient state management using custom hooks for bookings, waiting lists, and notifications.
+    Local Storage Integration: State persistence using localStorage, ensuring data is retained on page refresh.
+    Efficient Re-renders: Utilizes React’s useState() and useEffect() for state changes and syncing with localStorage.
+    Framer Motion: Smooth animations for notifications using Framer Motion's AnimatePresence and motion.div.
+
+🧪 Testing Instructions
+    ### 1. Run Unit Tests:
+    npm test
+    ### 2. Watch Mode:
+    npm test -- --watch
+
+Jest and React Testing Library are used for unit tests.
+Tests cover:
+    Custom hooks for state management.
+    Component interactions and DOM updates.
+    Notification rendering and removal.
+
+⚒️ Technologies Used
+    Frontend: React (TypeScript), Tailwind CSS, Framer Motion
+    Backend: Node.js, Express, MongoDB
+    State Management: Custom Hooks with useState() and useEffect()
+    Testing: Jest, React Testing Library
+
+🔥 Key Learnings
+    Efficient state management using custom hooks.
+    Advanced animations with Framer Motion for dynamic UI interactions.
+    Writing robust unit tests with Jest and React Testing Library.
+    Managing conditional rendering and asynchronous state updates in React.
+
+🚀 Future Enhancements
+    User Authentication: Implement authentication for secure bookings.
+    Admin Dashboard: For event organizers to manage bookings and waiting lists.
+    Email Notifications: Integrate email notifications for booking confirmations.
+    Payment Integration: Support for payment gateways for paid events.
