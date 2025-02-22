@@ -1,0 +1,32 @@
+📸 Demo
+	To run the application locally, follow these steps:
+	
+	1. Clone the Repository
+		git clone https://github.com/veeramani33/Event-Booking-System.git
+		cd Event-Booking-System
+
+	2. Install Dependencies
+		npm install
+
+	3. Environment Variables
+		Create a .env file in the root directory and add the following:	
+			REACT_APP_TOTAL_SLOTS=10
+			REACT_APP_API_URL=http://localhost:3000
+		REACT_APP_TOTAL_SLOTS: Sets the total number of available slots for the event.
+		REACT_APP_API_URL: Backend API URL for data communication.
+
+	4. Start the Development Server
+		npm start
+		The app will be accessible at http://localhost:3000.
+
+	5. Interact with the App
+		Book Event Slots: Click "Book Now" to reserve an available slot.
+		Join Waiting List: If slots are full, enter your name and join the waiting list.
+		Cancel Booking: Cancel an existing booking to free up a slot.
+		Real-Time Notifications: Observe dynamic notifications for booking confirmations and waiting list updates.
+	
+	6. Run Unit Tests (Optional)
+		To ensure all functionalities work as expected:
+		npm test
+
+		This will run all unit tests written using Jest and React Testing Library.
